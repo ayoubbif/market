@@ -1,7 +1,9 @@
 const mongoose = require('mongoose');
+require('dotenv').config();
 
+const db_link = process.env.DB_LINK
 mongoose.connect(
-    'mongodb+srv://admin:root@market.yn7r7.mongodb.net/market?retryWrites=true&w=majority',
+    db_link,
     {useNewUrlParser: true, useUnifiedTopology: true}
 );
 

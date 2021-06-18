@@ -2,6 +2,7 @@ const Koa = require('koa');
 const Router = require('@koa/router');
 const cors = require('@koa/cors');
 const ethers = require('ethers');
+require('dotenv').config();
 const PaymentProcessor = require('../client/src/contracts/PaymentProcessor.json');
 const { Payment } = require('./db.js');
 
